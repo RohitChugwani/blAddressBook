@@ -77,6 +77,16 @@ public class AddressBookFunctions implements Interface {
         }
 
     }
+    @Override
+    public void delete(String name) {
+        for (int i = 0; i < database.size(); i++) {
+            if (database.get(i).first_name.equals(name))
+            {
+                System.out.println(database.remove(i));
+
+            }
+        }
+    }
 
 
 }
